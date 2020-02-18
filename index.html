@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Currency converter</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Currency Convertor</h1>
+        <br>
+        <form>
+            <p> From: </p>
+            <select name="Currency rate" class="con" id="select" required> 
+                <option>Select a currency</option>
+				 <option value="USD">USD </option>
+			      <option value="EUR">EUR </option>
+			      <option value="GPB">GBP </option>
+			      <option value="AUD">AUD </option>
+			      <option value="JPY">JPY </option>
+			      <option value="NGN">NGN </option>
+			</select>
+            <br>
+            <input type="text" id="amount" class="forex-amount" placeholder="Enter amount" required>
+            <br>
+            <br>
+            <p> To: </p>
+            <select name="Currency rate" class="fx" id="select1" required>                    
+                <option>Select a currency</option>
+				<option value="USD">USD </option>
+			      <option value="EUR">EUR </option>
+			      <option value="GPB">GBP </option>
+			      <option value="AUD">AUD </option>
+			      <option value="JPY">JPY </option>
+			      <option value="NGN">NGN </option>
+			</select>
+            <br>
+            <br>
+            <input type="button" value="Calculate" onclick="calc()">
+
+            <input type="text" id="result" value="">
+
+        </form>
+    </div>
+</body>
+
+</html>
